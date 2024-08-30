@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Estudiantes Dicen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>100 Estudiantes Dicen</h1>
+        <h2>Edición Lengua y Literatura</h2>
+
+        <div class="game-board">
+            <div class="team-scores">
+                <!-- Equipo 1 -->
+                <div class="team">
+                    <h3>Equipo 1</h3>
+                    <div class="score" id="team1-score">0</div>
+                    <div class="score-buttons">
+                        <button id="team1-add-5" class="score-btn">+05</button>
+                        <button id="team1-add-4" class="score-btn">+04</button>
+                        <button id="team1-add-3" class="score-btn">+03</button>
+                        <button id="team1-add-2" class="score-btn">+02</button>
+                        <button id="team1-add-1" class="score-btn">+01</button>
+                        <button id="team1-subtract" class="score-btn negative">-</button>
+                    </div>
+                </div>
+                <!-- Equipo 2 -->
+                <div class="team">
+                    <h3>Equipo 2</h3>
+                    <div class="score" id="team2-score">0</div>
+                    <div class="score-buttons">
+                        <button id="team2-add-5" class="score-btn">+05</button>
+                        <button id="team2-add-4" class="score-btn">+04</button>
+                        <button id="team2-add-3" class="score-btn">+03</button>
+                        <button id="team2-add-2" class="score-btn">+02</button>
+                        <button id="team2-add-1" class="score-btn">+01</button>
+                        <button id="team2-subtract" class="score-btn negative">-</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-controls">
+                <div class="strike-container">
+                    <button id="strike-btn" class="strike-btn">X</button>
+                    <div id="strikes"></div>
+                </div>
+                <button id="sound-llamada" class="sound-btn">Llamada</button>
+                <button id="sound-correcto" class="sound-btn">Correcto</button>
+                <button id="sound-incorrecto" class="sound-btn">Incorrecto</button>
+                <div class="question-counter">
+                    <span id="current-question">0</span> / <span id="total-questions">24</span>
+                    <button id="next-question">++</button>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <h3 id="current-question-text">¿Qué es un soneto?</h3>
+            </div>
+
+            <div class="answers">
+                <div class="answer"><span class="number">1</span> <span class="text"></span> <span class="points"></span></div>
+                <div class="answer"><span class="number">2</span> <span class="text"></span> <span class="points"></span></div>
+                <div class="answer"><span class="number">3</span> <span class="text"></span> <span class="points"></span></div>
+                <div class="answer"><span class="number">4</span> <span class="text"></span> <span class="points"></span></div>
+                <div class="answer"><span class="number">5</span> <span class="text"></span> <span class="points"></span></div>
+            </div>
+        </div>
+
+        <div id="timer">Tiempo restante: 10 segundos</div>
+
+        <div class="controls">
+            <input type="text" id="answer-input" placeholder="Ingrese su respuesta">
+            <button id="submit-answer">Enviar Respuesta</button>
+            <button id="previous-question">Pregunta Anterior</button>
+            <button id="next-question">Siguiente Pregunta</button>
+            <button id="bonus-wheel">Ruleta de Bonificación</button>
+            <button id="hint">Pista</button>
+            <button id="strike-btn" class="strike-btn">X</button>
+        </div>   
+
+        <div id="logo-left" class="logo">
+            <img src="logos/logo1.jpeg" alt="Logo izquierdo">
+        </div>
+        <div id="logo-right" class="logo">
+            <img src="logos/logo2.jpg" alt="Logo derecho">
+        </div>
+
+        <footer>
+            <p>&copy; 2024 ingenierosasociados</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
